@@ -148,7 +148,20 @@ main {
     
 }
 
+/* sponers style */
 
+.Sponspors{
+    margin-top: 60px;
+}
+.sponspors-text-content{
+    text-align: center;
+}
+.sponspors-image-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
 
 
 
@@ -168,8 +181,12 @@ main {
 
     .navber,
     .teame-container,
-    .facts-image-text-container {
+    .facts-image-text-container,
+    .sponspors-image-container{
         flex-direction: column;
+    }
+    .sponspors-image-container{
+        gap:20px
     }
     .facts-image-text-container{
         gap:10px;
@@ -194,8 +211,12 @@ main {
 
     .navber,
     .teame-container,
-    .facts-image-text-container {
+    .facts-image-text-container,
+    .sponspors-image-container {
         flex-direction: column;
+    }
+    .sponspors-image-container{
+        gap:20px
     }
     .facts-image-text-container{
         gap:10px;
