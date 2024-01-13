@@ -89,7 +89,8 @@ header {
 
 /* main style */
 
-main {
+main,
+footer {
     max-width: 1400px;
     margin: 0 auto;
 
@@ -144,30 +145,72 @@ main {
 .facts-feature {
     border-radius: 8px;
     border: 1px solid #FF900E;
-    padding: 15px  20px;
-    
+    padding: 15px 20px;
+
 }
 
 /* sponers style */
 
-.Sponspors{
+.Sponspors {
     margin-top: 60px;
 }
-.sponspors-text-content{
+
+.sponspors-text-content {
     text-align: center;
 }
-.sponspors-image-container{
+
+.sponspors-image-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 80px;
 }
 
+.footer-section {
+    text-align: center;
+    border-radius: 8px;
+    background: #FFF4E7;
+    padding: 20px;
+}
 
+/* featured-container */
+.featured-container {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+    gap: 20px
+}
 
+/* .featured-container>div {
+    width: 50%
+} */
 
+.card {
+    border-radius: 8px;
+    background: #FFF;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
 
+.ten-year-bedge {
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 10px;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 40px 42px;
+    text-align: center;
+    width:30%;
+    position: relative;
+    bottom:100px;
 
+}
+.card-image-content  img{
+    height: 80%;
+    margin-left:60px
+}
 
 
 
@@ -182,24 +225,33 @@ main {
     .navber,
     .teame-container,
     .facts-image-text-container,
-    .sponspors-image-container{
+    .sponspors-image-container,
+    .featured-container {
         flex-direction: column;
     }
-    .sponspors-image-container{
-        gap:20px
+    .featured-container{
+        width: 100%;
     }
-    .facts-image-text-container{
-        gap:10px;
+    .sponspors-image-container {
+        gap: 20px
     }
+
+    .facts-image-text-container {
+        gap: 10px;
+    }
+
     .teame-image {
         grid-template-columns: 1fr;
     }
 
-    .teame-content ,
-    .facts-image-text-container{
+    .teame-content,
+    .facts-image-text-container {
         padding: 5px;
     }
-
+    .card-image-content  img{
+        width:100%;
+        margin:0
+    }
 }
 
 /* mideum device */
@@ -212,13 +264,16 @@ main {
     .navber,
     .teame-container,
     .facts-image-text-container,
-    .sponspors-image-container {
+    .sponspors-image-container,
+    .featured-container {
         flex-direction: column;
     }
-    .sponspors-image-container{
-        gap:20px
+
+    .sponspors-image-container {
+        gap: 20px
     }
-    .facts-image-text-container{
-        gap:10px;
+
+    .facts-image-text-container {
+        gap: 10px;
     }
 }
